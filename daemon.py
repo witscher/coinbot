@@ -4,10 +4,10 @@ import coinbase.wallet
 import requests
 import os
 
-currency =  os.environ['CURRENCY']
-price =  os.environ['PRICE']
-api_key = os.environ['API_KEY']
-api_secret = os.environ['API_SECRET']
+currency =  os.environ.get('CURRENCY','LTC')
+price =  os.environ.get('PRICE','buy')
+api_key = os.environ.get('API_KEY')
+api_secret = os.environ.get('API_SECRET')
 
 #from coinbase.wallet.client import Client
 
