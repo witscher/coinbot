@@ -10,9 +10,6 @@ api_key = os.environ.get('API_KEY')
 api_secret = os.environ.get('API_SECRET')
 
 #from coinbase.wallet.client import Client
-
-
-
 #client = Client(api_key, api_secret)
 
 url = 'https://api.coinbase.com/v2/prices/'+ currency + '-EUR/' + price
